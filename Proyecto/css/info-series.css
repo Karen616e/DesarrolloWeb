@@ -1,13 +1,14 @@
 .principal-hero{
     padding: 10px 80px;
-    height: 65vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 10px;
 }
 
 /*Logo de netflix */
 .principal-hero .netflix-series{
-    height: 20%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -31,11 +32,15 @@
 .principal-hero .serie{
     display:flex;
     flex-direction: column;
+    gap: 10px;
 }
 
 .principal-hero .serie .logo-serie{
-    margin-top: -2rem;
-    width:25rem;
+    max-width:26rem;
+    filter: drop-shadow(2px 2px 4px white);
+    min-height: 10rem;
+    display: flex;
+    align-items: center;
 }
 
 .principal-hero .serie .logo-serie img{
@@ -159,6 +164,54 @@
 }
 
 
+
+
+
+
+/* Celulares (≤599px) */
+@media (max-width: 599px) {
+
+    .principal-hero{
+        padding: 10px 20px;
+    }
+
+    .principal-hero .netflix-series{
+        transform: scale(0.6);      
+    }
+
+    .principal-hero .serie .info{
+        width: 100%;
+        gap: 0px;
+        justify-content: space-around;
+        font-size: 0.8rem
+
+    }
+
+    
+    .principal-hero .serie .logo-serie{
+        margin-top: 0px;
+        width: 60%;
+    }
+
+
+    .principal-hero .serie .descripcion-parrafo{
+        margin-top: 30px;
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+  .buttons {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+  .buttons .btn {
+        width: 100%;
+        height: 2.5rem;
+        font-size: 1rem;
+    }
+}
 
 
 

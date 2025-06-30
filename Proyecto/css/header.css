@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
+    flex-wrap: wrap;
     height: 15vh;
     margin: 0px 0px 20px 0px;
 }
@@ -58,3 +58,26 @@
     left: 15px;
     font-size: 0.8rem;
 }
+
+
+@media (max-width: 1000px)  {
+    .header{
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+        gap: 20px;
+    }
+
+    .nav .menu a{
+        font-size: 0.9rem;  
+    }
+
+    .nav, .bar{
+        width: 80%;
+    }
+
+    .bar input{
+        height: 3rem;
+    }
+}
+
