@@ -3,8 +3,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: start;
     gap: 10px;
+
 }
 
 /*Logo de netflix */
@@ -137,8 +138,11 @@
 /*estilo del boton de list*/
  .buttons .list{
     background: none;
+    transition:all 0.4s ease-in-out;
 
 }
+
+/*
 
 .list svg {
 	width: 100%;
@@ -161,11 +165,11 @@
 
 .list:hover rect {
 	stroke-dashoffset: 0;
+}*/
+
+.buttons .list:hover{
+    border: 2px #fff solid;
 }
-
-
-
-
 
 
 /* Celulares (≤599px) */
