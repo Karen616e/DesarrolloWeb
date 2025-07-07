@@ -1,0 +1,31 @@
+
+/*selector de etiqueta*/
+h1{
+    color: blue;
+}
+a{
+    color: red;
+}
+
+/*selector de clase se ocupa .nombreClase*/
+.titulo{
+    color: blue;
+}
+
+/*selector de ID se ocupa #nombreID*/
+#titulo{
+    color: blue;
+}
+
+/*selectores de grupos*/
+h2,
+h3{
+    color: blueviolet;
+}
+
+/*selector combinado*/
+.nav-bar li{
+    color: chartreuse;
+}
+
+

@@ -1,0 +1,53 @@
+/*
+
+**La especificidad indica que tan especifico un selector para 
+aplicar un estilo u otro
+
+**El nivel de especificidad de un selector puede verse de la siguiente forma:
+
+[ estilosInline ID ClasesyPsudoclases elementosyPseudoelementos]
+
+**Siendo los estilosInline más especificos y los elementosyPseudoelementos 
+los menos especificos
+
+*/
+
+/*nivel de especificidad
+[0 0 0 1]
+*/
+p{
+    color: blue;
+    font-size: 20px;
+}
+
+/*nivel de especifidad
+[0 0 0 2]
+*/
+main p{
+    color:red ;
+    font-size: 40px;
+}
+
+/* [0 0 1 0]*/
+.text{
+    color:blueviolet;
+}
+
+/* [0 0 1 1]*/
+.principal p{
+    color: chocolate;
+}
+
+/* [0 1 0 0]*/
+#text{
+    color: chartreuse;
+}
+
+/*cuando colocamos !important es como si tuvieramos el siguiente valor
+se salta todos los niveles y es el mas importante
+[9 9 9 9]
+no es recomendable ocuparlo*/
+p{
+    color: darkgreen !important;
+}
+

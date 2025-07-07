@@ -1,0 +1,44 @@
+/*los gradientes son un tipo de imagen con una combinación de colores*/
+/* se define mediante una linea de gradiente que contiene almenos 2 puntos
+    de parada e inicio de color
+    **El punto de inicio es la ubicación en la línea de gradiente 
+    donde comienza el primer color. 
+    **El punto final es el punto donde termina el último color.
+*/
+.caja{
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+}
+
+.gradiente-lineal{
+    background: 
+    /*linear-gradient(rgb(70, 70, 237) ,rgb(175, 30, 237));*/
+    /*linear-gradient(red 0%, orange 25%, yellow 50%, green 75%, blue 100%);*/
+
+    /*se puede establecer un punto medio entre ambos colores para marcar
+    en que punto se encontrará la transición suave
+    linear-gradient(red 10%, 30%, blue);*/
+
+    /* es util para la creacion de efectos de desvanecimiento*/
+    linear-gradient(to right, rgba(0,0,0,1) ,30% ,rgba(0,0,0,0.5))
+    ,url(../imagenes/fondoGenerico.jpg); 
+    background-size: cover;
+
+
+
+    /*
+    direcciones básicas
+
+    to top: de abajo hacia arriba
+    to right: de izquierda a derecha
+    to left: de derecha a izquierda
+    to bottom: De arriba hacia abajo
+
+    to top left: desde abajo-derecha hacia arriba izquierda   
+    to top right: desde abajo-izquierda hacia arriba-derecha
+    to bottom left: desde arriba-derecha hacia abajo-izquierda 
+    to bottom right: desde arriba-izquierda hacia abajo-derecha
+
+    */
+}

@@ -8,7 +8,7 @@
 
 
 3. **Estilos para la imagen del logo de Netflix (`.principal-hero .netflix-series .netflix img`)**
-    * Asegura que la imagen ocupe el 100% de su contenedor (`.principal-hero .netflix-series .netflix`). Este contenedor debera tener un
+    * Asegura que la imagen ocupe el 100% de su contenedor (`.principal-hero .netflix-series .netflix`). Este contenedor (`.principal-hero .netflix-series .netflix) debera tener un ancho de 2 rem y un alto de 2 rem
 4.  **Estilos para el contenedor de la serie (`.principal-hero .netflix-series p`):**.
     *  Aumentar el espacio entre cada letra de un elemento de texto en 5px (`letter-spacing`).
 5.  **Estilos para la clase serie (`.principal-hero .serie`):**

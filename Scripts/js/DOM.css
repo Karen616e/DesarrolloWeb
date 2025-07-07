@@ -1,0 +1,47 @@
+
+*{
+    box-sizing: border-box;
+}
+
+
+body {
+	min-height: 100vh;
+	width: 100%;
+	background: #eaeaea;
+	color: #000;
+}
+
+
+.main{
+    min-height: 100vh;
+    width: 90%;
+    display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.cajas1,.cajas2{
+    gap: 30px;
+    width: 50%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	justify-content: center;
+    border: 2px #000 solid;
+
+}
+
+.caja{
+    width: 100px;
+    height: 50px;
+    border: 5px #000  solid;
+}
+
+
+.caja-seleccionada{
+    transform: scale(1.4);
+    background-color: chartreuse;
+}
+

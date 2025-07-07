@@ -1,0 +1,92 @@
+/*
+Las animaciones CSS3 permiten animar la transición entre un estilo CSS y otro. 
+Las animaciones constan de dos componentes: un estilo que describe la animación CSS 
+y un conjunto de fotogramas que indican su estado inicial y final,
+ así como posibles puntos intermedios en la misma.
+ 
+ Inician desde que se carga la página*/
+
+.caja{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(169, 106, 227);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+
+    /*definimos el nombre de la animación con animation-name*/
+    animation-name: cambiarAncho;
+    /*definimos el tiempo de la animación*/
+    animation-duration: 0.5s;
+
+    /*definimos el retardo de la animación*/
+    animation-delay: 1s;
+
+    /*funciones de animación exactamente igual que con transiciones*/
+    animation-timing-function: ease;
+
+    /*cuantas veces se va a ejecutar se puede poner el valor de infinite*/
+    /*animation-iteration-count: 2;
+
+    /*dirección de la animación
+    normal: valor por defecto, va hacia adelante
+    reverse: empieza por detras
+    alternate: empieza hacia adelante y luego en reversa
+    alternate-reverse: primero en reversa y luego hacia adelante*/
+
+    animation-direction: alternate ;
+
+    /*Especifica qué valores tendrán las propiedades después de finalizar la animación
+     (los de antes de ejecutarla, los del último fotograma de la animación o ambos).
+     forwards: se mantiene con el último keyframe
+     backward: mantiene los elementos del primer keyframe durante el delay
+     */
+
+    animation-fill-mode: forwards;
+}
+
+/*animation puede englobar todas las propiedades antes mencionadas
+animation: nombreAnimacion duración funcionDeanimacion delay repeticiones direccion
+*/
+.caja:hover{
+    animation: moverDerecha 4s ease-in-out 0s;
+
+}
+
+
+/*se define la animación mediante @keyframe [nombre de la animacion]
+con from le decimos el valor inicial
+con to se define el valor final*/
+@keyframes cambiarAncho {
+    from{ /*0% de la animación*/
+        width: 200px;
+        background-color: rgb(169, 106, 227);
+    }
+
+    50%{
+        background-color: rgb(227, 106, 106);
+    }
+
+    to{/*100%* de la animación*/
+        width: 300px;
+        background-color: rgb(70, 172, 255);
+    }
+}
+
+@keyframes moverDerecha {
+    0%{
+        background-color: rgb(222, 244, 79);
+        transform: translateX(0px);
+
+    }
+
+    50%{
+        background-color: rgb(101, 240, 85);
+    }
+
+    100%{
+        background-color: rgb(80, 217, 217);
+        transform: translateX(800px);
+    }
+}

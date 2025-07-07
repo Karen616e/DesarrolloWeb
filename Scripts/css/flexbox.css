@@ -1,0 +1,63 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+/*contenedor flex*/
+.cajas{
+
+
+    height: 600px;
+
+    display: flex; /*establecemos el contendor flex*/
+    /*para cambiar la dirección de los elementos hijos
+    se cambia el eje principal
+    row: el eje principal esta en una fila
+    column: el eje principal esta en una columna
+    row-revers: el eje principal esta en una fila pero inicia desde el otro extremo en sentido contrario
+    */
+
+
+    flex-direction:row; /*por defecto flex-direccion es row*/
+
+    /*autoajustar la fila y repartir los elementos hijos cuando el padre sea pequeño
+    por defecto se tiene el valor nowrap*/
+    flex-wrap:wrap;
+
+    /*separación entre cada uno de los elementos*/
+    /*gap: 20px;*/
+
+    /*ajustar items deacuerdo al eje principal definido en flex direction
+    center:centra los elementos
+    flex-start: coloca los elmentos al inicio de la direccion
+    
+    flex-end: coloca los elementos al final de la direccion
+    
+    space-between: coloca un espacio igual entre cada uno de los elementos pero no incluye el contenedor
+    
+    space-around: distribuye un espacio igual alrededor de cada elemento.
+    
+    El espacio entre los elementos es el doble del espacio entre los bordes del contenedor 
+    y los elementos, ya que este se reparte por mitades en los extremos.
+    
+    space-evenly: Espacio igual entre todos los elementos y los bordes del contenedor.
+    */
+    justify-content: space-around;
+
+
+    /*ajustar items en el eje secundario
+    si el eje principal es horizontalmente, el eje secundario es verticalmente y visceversa
+    sus valores son exactamente los mismos que justify content*/
+    align-items: center;
+
+}
+
+
+/*flex hijos*/
+.caja{
+    background-color: rgb(4, 161, 161);
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+}

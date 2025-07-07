@@ -25,7 +25,8 @@ body {
 
 /* Fondo oscuro de fondo */
 .modal {
-  display: none; /* Oculto por defecto */
+ /* Oculto por defecto */
+ display: none;
   position: fixed;
   z-index: 1000;
   left: 0;

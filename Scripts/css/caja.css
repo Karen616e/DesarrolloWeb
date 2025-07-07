@@ -1,0 +1,9 @@
+.caja {
+    width: 400px; /*para cambiar el ancho*/
+    height: 400px; /* para cambiar el alto por defecto el alto es automatico al contenido*/
+    padding: 30px 20px 30px 20px; /*margen interno de la caja top-right-bottom-left*/
+    /*padding: 30px 20px margen interno 30px arriba y abajo, 20px derecha,izquierda*/
+    border: 5px solid green; /*borde de la caja tamaño de borde, estilo de borde, color*/
+    margin: 30px;
+    background: rgb(64, 64, 224);
+}

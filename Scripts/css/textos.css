@@ -1,0 +1,39 @@
+body{
+    /*para cambiar la tipografia*/
+    /* en caso de no encontrar la primer estilo se va al siguiente elemento
+    de la lista */
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.post h2{
+    font-size: 30px;
+    font-style:italic;
+    font-weight:bold;
+    text-align:center;
+    /* center, end, justify,left,right*/
+    text-decoration:underline blue 5px dotted;
+    /*underline overline line-through*/
+}
+
+.post p{
+    font-size: 20px;
+    text-align: justify;
+    /*para transformar nuestroa texto a mayusculas, minusculas*/
+    /*uppercase: todo mayusculas
+    lowercase: todo minusculas
+    capitalize: la primer letra de cada palabra es mayuscula
+    */
+    text-transform:uppercase;
+    color: #0760b8;
+
+    /*line-height: para definir el espaciado entre lineas*/ 
+    line-height: 40px;
+
+    /*espaciado entre letras*/
+    letter-spacing: 5px;
+
+    /*espaciado entre palabras*/
+    word-spacing: 10px;
+
+}

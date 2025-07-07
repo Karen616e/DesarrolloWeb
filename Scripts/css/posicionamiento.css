@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #f2f2f2;
+}
+
+.caja{
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+    background:#262626;
+    font-size: 20px;
+    padding: 10px;
+    margin: 20px;
+}
+
+.posicionada{
+    background: rgb(31, 98, 255);
+    /*position para posicionar la caja
+    static: la caja no se va a mover
+    relative: mueve la caja y los demas elementos respetan el flujo de ella
+    absolute: se posiciona el elemento pero los demas elementos no respetan su flujo
+    se posiciona con respecto a las coordenadas del elemento padre
+    fixed: para mantenerla fija cuando se hace scroll en la pantalla
+    */
+    position: absolute;
+    top: 50px; /*50 pixeles hacia abajo*/
+    left: 50px; /*50 pixeles hacia la derecha*/
+}
+
+.fija{
+    left: 400px;
+    position: fixed;
+    background-color: rgb(255, 231, 93);
+}
+
+.padre{
+    padding:0;
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+    position: relative;
+    
+}
+
+.hija{
+    padding: 0;
+    margin: 0;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(243, 239, 27);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+   
+}

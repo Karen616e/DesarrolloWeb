@@ -1,0 +1,28 @@
+/*
+es una palabra clave que se le añade a los selectores
+y permiten añadir estilos a una parte en concreto del documento
+
+selector:pseudoelemento { propiedad: valor; }
+
+*/
+
+
+/*para seleccionar la primer letra de los parrafos*/
+.parrafo::first-letter{
+    color: blue;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/*para seleccionar la primer linea del parrafo*/
+.parrafo::first-line{
+    background-color: rgb(237, 147, 113);
+}
+
+
+/*aplica estilos a la parte de un documento que ha sido resaltada por el usuario (como hacer clic y arrastrar el ratón sobre el texto).
+*/
+.parrafo::selection{
+    background-color: blueviolet;
+    color: aliceblue;
+}

@@ -18,6 +18,7 @@
 .principal-hero .netflix-series .netflix{
     width: 2rem;
     height: 2rem;
+    display: block;
 }
 
 .principal-hero .netflix-series .netflix img{
@@ -83,6 +84,7 @@
     flex-direction: row;
 }
 
+
  .buttons .btn{
     border-radius: 2px;
     color: #fff;
@@ -93,6 +95,7 @@
     font-size: 16px;
     position: relative;
     overflow: hidden;
+    /*13*/
     & span{
         z-index: 2;
         position: relative;

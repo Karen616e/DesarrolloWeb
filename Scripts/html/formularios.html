@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <!--Formularios-->
+    <!--Etiqueta label para formularios, relaciona el input con el label
+    sirve para darle una descripción al input-->
+    <!--name y ID para identificar los campos 
+    name para mandar peticiones al servidor
+    id para javascript-->
+    <!--Atributo method para indicar al servidor que metodo se estará ejecutando
+    POST es para envio de información
+    GET solicitud de información-->
+    <form action="" name="contacto" id="contacto" method="POST">
+
+        <!--El atributo type puede ser:
+        text:para texto-->
+        <!--placeholder: para indicar dentro del input la descripción-->
+        <!--maxlenght: para delimitar el maximo de caracteres-->
+        <label for="Nombre">Nombre:</label>
+        <input type="text" id="Nombre" placeholder="John Doe" maxlength="10">
+
+        <!--textarea para descripciones-->
+        <br>
+        <label for="descripcion">Descripción</label>
+        <textarea name="descripcion" id="descripcion"></textarea>
+        <br>
+
+        <!--select: cuando se tienen diferentes opciones para un campo-->
+        <label for="pais">Pais</label>
+        <select name="pais" id="pais">
+            <option value="">Seleccione una opcion</option>
+            <option value="mexico">México</option>
+            <option value="argentina">Argentina</option>
+            <option value="brasil">Brasil</option>
+            <option value="eu">Estados unidos</option>
+        </select>
+        <br>
+
+        <!--Input radio-->
+        <!--Para seleccionar uno u otro los dos deben de estar asociados con el mismo name-->
+        <legend>Seleccione su idioma</legend>
+        <label for="español">Español</label>
+        <input type="radio" id="español" value="español" name="idioma">
+
+        <br>
+        <label for="ingles">Ingles</label>
+        <input type="radio" id="ingles" value="ingles" name="idioma">
+
+        <br>
+        <!--Input checkbox-->
+        <label for="terminos">Acepto terminos y condiciones</label>
+        <input type="checkbox" name="terminos" id="terminos">
+
+        <input type="submit" value="Enviar formulario">
+
+    </form>
+</body>
+</html>

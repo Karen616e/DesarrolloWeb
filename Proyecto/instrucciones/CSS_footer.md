@@ -21,7 +21,7 @@
 5.  **Estilos para los enlaces del pie de página (`.footer-links`):**
     * Usa Flexbox para distribuir los enlaces a lo largo de la fila, justificando el contenido al centro y permitiendo fluir a los elementos en varias lineas.
     * Aplica un margen inferior de 20px.
-    * Para las listas (`<ul>`) (`footer-links ul`), elimina los puntos de lista y define márgenes (Izquierdo de 10px y superior de 30px), un `padding` de 0, alineación de texto a la izquierda y un ancho mínimo de 150px.
+    * Para las listas (`<ul>`) (`footer-links ul`), elimina los puntos de lista y define márgenes (arriba/abajo 10px y hacia los lados de 30px), un `padding` de 0, alineación de texto a la izquierda y un ancho mínimo de 150px.
     * Aplica márgenes de 8px hacia arriba/abajo y 0px hacia los costados para los elementos de la lista (`<li>`) (`.footer-links li`).
     * Para los enlaces (`<a>`)  dentro de `.footer-links a`, define el color a gris, elimina la decoración y añade una transición para el color de 0.2s.
     * Al hacer `hover` sobre estos enlaces (`.footer-links a:hover`), cambia su color a blanco.

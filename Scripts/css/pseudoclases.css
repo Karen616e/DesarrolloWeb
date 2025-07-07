@@ -1,0 +1,68 @@
+/*
+Una pseudoclase CSS es una palabra clave que se añade a los selectores y q
+ue especifica un estado especial del elemento seleccionado.
+
+selector:pseudoclase { propiedad: valor; }
+*/
+
+a{
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+/*cuando se pasa el cursor sobre el elmemento va a cambiar su estado
+con el pseudoclase hover*/
+
+a:hover{
+    color: darkred;
+    text-decoration:underline;
+}
+
+/*active: mientras tenemos el elemento seleccionado*/
+a:active{
+    color: blue;
+}
+
+/*enlaces que el usuario ya haya visitado*/
+/*a:visited {
+  color: green;
+}*/
+
+
+
+.articulos .post:hover{
+    background-color: black;
+    color: azure;
+    font-size: 30px;
+}
+
+.boton{
+    width: 300px;
+    height: 100px;
+}
+
+.boton:hover{
+    background-color: aqua;
+    cursor: pointer;
+}
+
+.boton:hover a{
+    color:green;
+    font-weight: bold;
+}
+
+.caja{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    margin: 10px;
+}
+
+/*cuando tenemos mas de un elemento con la misma clase
+podemos ocupar nth-child para seleccionar un "n" elemento
+
+*/
+.caja:nth-child(4){
+    background-color: blueviolet;
+}

@@ -11,8 +11,8 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   // 🖱️ Cerrar el modal al hacer clic fuera del video
-  modal.addEventListener('click', (e) => {
-    if (e.target === modal) {
+  modal.addEventListener('click', (evento) => {
+    if (evento.target === modal) {
       video.pause();
       video.currentTime = 0;
       modal.style.display = 'none';
@@ -25,12 +25,12 @@ document.addEventListener('DOMContentLoaded', function () {
     icon.addEventListener('click', function (e) {
       e.preventDefault(); // evita que se abra de inmediato
 
-      icon.classList.add('clicked');
+      icon.classList.add('click');
 
       setTimeout(() => {
-        icon.classList.remove('clicked');
+        icon.classList.remove('click');
         window.open(icon.href, '_blank'); // abre en nueva pestaña
-      }, 300); // espera que termine la animación
+      }, 2000); // espera que termine la animación
     });
   });
 });

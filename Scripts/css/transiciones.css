@@ -1,0 +1,52 @@
+/*es una forma de animar los cambios en los estilos 
+de los elementos. 
+*/
+
+button{
+    background-color: rgba(240, 248, 255, 0);
+    width: 300px;
+    height: 100px;
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 20px;
+    /*transition-property: para indicar que propiedades se veran afectadas por la transición
+    por defecto se aplica a todas las propiedades*/
+    /*transition-property: background-color; 
+    /*duración de la transicion en ms o s*/
+    /*transition-duration: 2s;
+
+    /*definimos una función de tiempo que va a indicar el movimiento de la transición
+    lineal: misma velocidad de inicio hasta final
+    ease: inicio lento, despúes va rápido y termina lento
+    ease-in: inicio lento
+    ease-out: final lento
+    ease-in-out: inicio y final lento
+
+    */
+
+    /*
+    para transiciones personalizadas
+    https://easings.net/
+    */
+
+    /*transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+
+    /*transition agrupa las 3 propiedades antes mencionadas
+    transition: [transition property] [transition duration] [transition-timing-function] [delay]
+    */
+    transition: all 2s ease-in-out 0.2s;
+
+
+
+
+}
+
+
+button:hover{
+    background-color: rgb(191, 131, 247);
+    transform: scale(1.2);
+    color: rgb(255, 255, 255);
+    border-color: rgb(252, 252, 252);
+}
